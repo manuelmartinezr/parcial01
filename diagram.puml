@@ -1,0 +1,16 @@
+@startuml
+class Librarian
+{
+books_available: list
+add_book()
+remove_book()
+}
+class User
+{
+borrowed_books: list
+borrow_book()
+return_book()
+see_available()
+}
+Librarian "1" *-- User
+@enduml
